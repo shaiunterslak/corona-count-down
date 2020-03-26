@@ -14,10 +14,9 @@ const Home = () => {
 
   let name = 'Shai'
   let instagramURL = 'https://instagram.com/shaiunterslak'
-  let googleHangoutURL =
-    'https://hangouts.google.com/call/Oe4XRZS_RCc7xRKhXVWGAEEI'
-  let cellNumber = 'tel:' + '+27826374290' //your number here
-  let imgurLink = 'https://imgur.com/a/cTfS1hU'
+  let googleHangoutURL = 'https://hangouts.google.com/call/Oe4X'
+  let cellNumber = 'tel:' + '+2787777777' //your number here
+  let imgurLink = 'https://i.imgur.com/Di8w99o.jpg'
 
   return (
     <div className='container'>
