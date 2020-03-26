@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) based countdown web-page for the South African covid-19 related lockdown.
+
+Customise the links and name by changing these variables in index.js
+
+         let name = 'Your Name'
+         let instagramURL = 'https://instagram.com/yourInstaHandle' 
+         let googleHangoutURL = 'https://hangouts.google.com/call/YourHangoutCallID'
+         let cellNumber = 'tel:' + '+272345678' //your number here
+         let imgurLink = 'https://imgur.com/a/YourImGurID'
+
 
 ## Getting Started
 
