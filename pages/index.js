@@ -1,57 +1,59 @@
 import Head from 'next/head'
-import daysLeft from '../utils/days'
 
 const Home = () => {
   let today = new Date()
+  // Set time to one minute after midnight
   today.setHours(0, 1, 0, 0)
-  console.log(today)
+
+  //The official SA lockdown end date
   let lockdownEndDate = new Date('apr 16 2020')
-  let timeDif = Math.abs(lockdownEndDate.getTime() - today.getTime())
-  let daysLeft = Math.round(timeDif / (1000 * 3600 * 24))
+  let timeDifference = Math.abs(lockdownEndDate.getTime() - today.getTime())
+
+  //converts time difference to days left using formula from
+  let daysLeft = Math.round(timeDifference / (1000 * 3600 * 24))
+
+  let name = 'Shai'
+  let instagramURL = 'https://instagram.com/shaiunterslak'
+  let googleHangoutURL =
+    'https://hangouts.google.com/call/Oe4XRZS_RCc7xRKhXVWGAEEI'
+  let cellNumber = 'tel:' + '+27826374290' //your number here
+  let imgurLink = 'https://imgur.com/a/cTfS1hU'
 
   return (
     <div className='container'>
       <Head>
-        <title>Shai Count Down</title>
+        <title>{name} Count Down</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main>
         <h1 className='title'>Days left: {daysLeft}</h1>
 
-        <p className='description'>Until you can legally see Shai</p>
+        <p className='description'>Until you can legally see {name}</p>
 
         <div className='grid'>
-          <a
-            href='https://instagram.com/shaiunterslak'
-            target='_blank'
-            className='card'
-          >
+          <a href={instagramURL} target='_blank' className='card'>
             <h3>Look at his face &rarr;</h3>
-            <p>Find expertly curated Shai content on his Instagram.</p>
+            <p>Find expertly curated {name} content on his Instagram.</p>
           </a>
 
-          <a
-            href='https://hangouts.google.com/call/Oe4XRZS_RCc7xRKhXVWGAEEI'
-            target='_blank'
-            className='card'
-          >
+          <a href={googleHangoutURL} target='_blank' className='card'>
             <h3>Talk to his face &rarr;</h3>
             <p>Join this Google Hangout and let him know you're there.</p>
           </a>
 
-          <a href='tel:+27826374290' className='card'>
+          <a href={cellNumber} className='card'>
             <h3>Talk to his ear &rarr;</h3>
-            <p>Cellphones are the next big thing. Give Shai a call anytime.</p>
+            <p>
+              Cellphones are the next big thing. Give {name} a call anytime.
+            </p>
           </a>
 
-          <a
-            href='https://imgur.com/a/cTfS1hU'
-            target='_blank'
-            className='card'
-          >
+          <a href={imgurLink} target='_blank' className='card'>
             <h3>Look at his ear &rarr;</h3>
-            <p>View a high resolution photo of Shai's ear. For the bad days.</p>
+            <p>
+              View a high resolution photo of {name}'s ear. For the bad days.
+            </p>
           </a>
         </div>
       </main>
