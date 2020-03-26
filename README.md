@@ -6,7 +6,7 @@ Customise the links and name by changing these variables in index.js
          let instagramURL = 'https://instagram.com/yourInstaHandle' 
          let googleHangoutURL = 'https://hangouts.google.com/call/YourHangoutCallID'
          let cellNumber = 'tel:' + '+272345678' //your number here
-          let imgurLink = 'https://imgur.com/a/YourImGurID'
+         let imgurLink = 'https://imgur.com/a/YourImGurID'
 
 
 ## Getting Started
